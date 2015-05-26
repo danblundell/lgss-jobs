@@ -1,0 +1,9 @@
+.sidebar {
+	margin-top: $base-spacing-unit*2;
+
+	background-color: $sidebar;
+
+	a {
+		color: $sidebar-links;
+	}
+}

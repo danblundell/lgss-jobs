@@ -1,0 +1,229 @@
+/*------------------------------------*\
+    #STYLEGUIDE
+    Styles only used within the styleguide
+\*------------------------------------*/
+
+/**
+ * Pattern wrappers
+ */
+.pattern {
+	margin-bottom: 3em;
+}
+
+.pattern__title {
+	background-color: $ghost-gray;
+	margin: $base-spacing-unit/2 0;
+	padding: $base-spacing-unit/2;
+	.title {
+		margin: 0;
+		line-height: 1;
+		color: $manatee;
+
+		cursor: pointer;
+		
+		&:hover {
+			color: $black;
+		}
+
+		span {
+			font-size: .5em;
+		}	
+	}
+}
+
+.code {
+	margin-bottom: $base-spacing-unit;
+	padding: $base-spacing-unit/2 $base-spacing-unit;
+	overflow-x: scroll;
+
+	font-size: 15px;
+	
+	background-color: $whitesmoke;
+	border: 1px solid $geyser;
+
+	pre {
+		margin-bottom: 0;
+	}
+}
+/**
+ * Color Swatches
+ */
+.sg-colors {
+	@include clearfix();
+	margin: 0;
+	list-style-type: none;
+}
+
+.sg-color {
+	float: left;
+	width: 16.666667%;
+	
+	
+
+	@media all and (max-width: 760px) {
+		width: 25%;
+	}
+
+	@media all and (max-width: 600px) {
+		width: 50%;	
+	}
+}
+
+.sg-swatch {
+	height: 5em;
+	width: 5em;
+	margin: 0 auto 1em;
+	@include prefix(border-radius, 100%);
+}
+
+.sg-label {
+	text-align: center;
+	padding: .5em 0;
+}
+
+.sg-hex {
+	display: block;
+}
+
+.color-brand-primary {
+	background-color: $brand-primary;
+}
+.color-brand-primary-lt {
+	background-color: $brand-primary-lt;
+}
+.color-brand-secondary {
+	background-color: $brand-secondary;
+}
+.color-brand-secondary-lt {
+	background-color: $brand-secondary-lt;
+}
+.color-highlight {
+	background-color: $highlight;
+}
+.color-fail {
+	background-color: $fail;
+}
+.color-success {
+	background-color: $success;
+}
+.color-black {
+	background-color: $black;
+}
+.color-white {
+	background-color: $white;
+}
+.color-geyser {
+	background-color: $geyser;
+}
+.color-ghost-gray {
+	background-color: $ghost-gray;
+}
+.color-manatee {
+	background-color: $manatee;
+}
+.color-mine-shaft {
+	background-color: $mine-shaft;
+}
+.color-whitesmoke {
+	background-color: $whitesmoke;
+}
+
+.color-ccc {
+	background-color: $ccc;
+}
+.color-ncc {
+	background-color: $ncc;
+}
+.color-hdc {
+	background-color: $hdc;
+}
+.color-nocc {
+	background-color: $nocc;
+}
+.color-nbc {
+	background-color: $nbc;
+}
+.color-nph {
+	background-color: $nph;
+}
+.color-ocs {
+	background-color: $ocs;
+}
+.color-nhft {
+	background-color: $nhft;
+}
+
+
+/**
+ * Grid pattern
+ */
+.example {
+	.g-column {
+	background-image: url(../images/grid.png);
+	min-height: 30px;
+	}
+}
+
+.sharepoint-header {
+	@include clearfix();
+
+	background-color: $brand-primary;
+	padding: .5em 1em;
+
+	a {
+		color: $white !important;
+	}
+}
+
+.sharepoint-navigation {
+	@include clearfix();
+	
+	ul {
+		@include clearfix();
+		margin:0;
+	}
+
+	li {
+		float: left;
+		list-style-type: none;
+	}
+
+	a {
+		padding: .5em;
+	}
+
+	@media all and (max-width:600px){
+		ul {
+			max-height: 0;
+			overflow: hidden;
+			@include prefix(transition, all .2s ease-in-out);
+			&.is-open {
+				max-height: 600px;
+			}
+		}
+
+		li {
+			display: block;
+			width: 100%;
+		}
+		a {
+			display: block;
+			text-align: right;
+		}
+
+		
+	}
+}
+
+.menu-btn {
+	@include clearfix();
+	display: none; /* for IE8 and above */
+
+	@media all and  (max-width: 600px) {
+
+		display: block;
+		> a {
+			float: right;
+		}
+	}
+}
