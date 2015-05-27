@@ -1,4 +1,4 @@
-# LGSS Service Manual
+# LGSS Jobs microsite
 
 This manual is a work in progress and intends to set out the foundations of how we work as an LGSS team.
 

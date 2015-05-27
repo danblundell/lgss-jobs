@@ -1,13 +1,19 @@
 footer.site-footer {
-  @include font-size(13);
-  background: $brand-primary;
-  text-transform: uppercase;
-  height:auto;
-  margin-top: $base-font-size;
-  color:$white;
+  @extend %clearfix;
+
+  background: $ghost-gray;
+  border-top-width: $base-spacing-unit/4;
+  border-top-color: $manatee;
+  border-top-style: solid;
+
+  padding-bottom: 2em;
+  padding-top: 2em;
+
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: $base-spacing-unit*2;
 
   ul.inline-list {
-    @include font-size(13);
     margin:0;
     padding:0;
   }
@@ -17,9 +23,6 @@ footer.site-footer {
     &:first-child{
       padding:0;
     }
-  }
-  a:link, a:visited {
-    color:$white;
   }
   a:hover, a:active{
     color:$mine-shaft;
